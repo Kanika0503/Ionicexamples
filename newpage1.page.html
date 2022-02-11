@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>working with Ionic forms </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+     <ion-item>
+    <ion-label floating> User name </ion-label>
+    <ion-input type="text"> </ion-input>
+    </ion-item>  
+     <ion-item>
+    <ion-label floating> Password </ion-label>
+    <ion-input type="password"> </ion-input>
+    </ion-item>  
+
+<ion-item>
+<ion-label>course</ion-label>
+<ion-select [(ngModel)]="course">
+<ion-select-option value="bca">BCA</ion-select-option>
+<ion-select-option value="bba">BBA</ion-select-option>
+<ion-select-option value="mca">MCA</ion-select-option>
+<ion-select-option value="mba">MBA</ion-select-option>
+</ion-select>
+</ion-item>
+
+<ion-list radio-group>
+  <ion-list-header>
+    Language
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label>JAVA</ion-label>
+    <ion-radio checked="true" value="bca"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Python</ion-label>
+    <ion-radio value="bca"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>C</ion-label>
+    <ion-radio value="bca" disabled="true"></ion-radio>
+  </ion-item>
+</ion-list>
+<ion-item>
+  <ion-label>course 1</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label> course 2</ion-label>
+  <ion-checkbox color="dark" ></ion-checkbox>
+</ion-item>
+
+
+</ion-list>
+<ion-item>
+</ion-item>
+<ion-button routerLink="/" routerDirection=back>Home page </ion-button>
+
+</ion-content>
